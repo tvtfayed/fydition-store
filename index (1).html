@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fydition Store</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/177_D73CB06.png" alt="شعار المتجر" class="logo">
+                    <span class="brand-name">متجر التصاميم</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                    <li><a href="#services" class="nav-link">الخدمات</a></li>
+                    <li><a href="#portfolio" class="nav-link">معرض الأعمال</a></li>
+                    <li><a href="#store" class="nav-link">المتجر</a></li>
+                    <li><a href="#reviews" class="nav-link">التقييمات</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="https://discord.gg/phBdT5s8y2" target="_blank" class="nav-link discord-link">
+                        <i class="fab fa-discord"></i> ديسكورد
+                    </a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">أفضل تصاميم الجرافيك</h1>
+                <p class="hero-subtitle">نقدم لك مجموعة متنوعة من التصاميم والقوالب الجاهزة عالية الجودة</p>
+                <div class="hero-buttons">
+                    <a href="#store" class="btn btn-primary">تصفح المتجر</a>
+                    <a href="#portfolio" class="btn btn-secondary">معرض الأعمال</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <img src="assets/images/177_D73CB06.png" alt="تصميم رقمي">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">خدماتنا</h2>
+                <p class="section-subtitle">نقدم مجموعة شاملة من خدمات الجرافيك</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>تصميم الشعارات</h3>
+                    <p>تصاميم شعارات احترافية ومميزة تعبر عن هوية علامتك التجارية</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>تصميم البوسترات</h3>
+                    <p>بوسترات إعلانية وتسويقية جذابة ومؤثرة</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rectangle-ad"></i>
+                    </div>
+                    <h3>تصميم البانرات</h3>
+                    <p>بانرات رقمية ومطبوعة للإعلانات والمناسبات</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>تصميم الهوية البصرية</h3>
+                    <p>هوية بصرية متكاملة تشمل الشعار والألوان والخطوط</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">معرض الأعمال</h2>
+                <p class="section-subtitle">مجموعة من أفضل أعمالنا وتصاميمنا</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" onclick="openPortfolioModal('assets/images/231_Copy_951A254.png', 'تصميم شعار', 'شعار احترافي لشركة تقنية', 'PNG', '1080x1080', '2024')">
+                    <img src="assets/images/231_Copy_951A254.png" alt="عمل 1">
+                    <div class="portfolio-overlay">
+                        <h3>تصميم شعار</h3>
+                        <p>شعار احترافي لشركة تقنية</p>
+                        <div class="view-details">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openPortfolioModal('assets/images/139_Copy_2_C584A76.png', 'تصميم هوية بصرية', 'هوية بصرية متكاملة', 'PNG', '1080x1080', '2024')">
+                    <img src="assets/images/139_Copy_2_C584A76.png" alt="عمل 2">
+                    <div class="portfolio-overlay">
+                        <h3>تصميم هوية بصرية</h3>
+                        <p>هوية بصرية متكاملة</p>
+                        <div class="view-details">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openPortfolioModal('assets/images/47_5ABAE18.png', 'تصميم جرافيك', 'تصميم جرافيك إبداعي', 'PNG', '1080x1080', '2024')">
+                    <img src="assets/images/47_5ABAE18.png" alt="عمل 3">
+                    <div class="portfolio-overlay">
+                        <h3>تصميم جرافيك</h3>
+                        <p>تصميم جرافيك إبداعي</p>
+                        <div class="view-details">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openPortfolioModal('assets/images/187_9338678.png', 'تصميم بانر', 'بانر إعلاني متميز', 'PNG', '1080x1080', '2024')">
+                    <img src="assets/images/187_9338678.png" alt="عمل 4">
+                    <div class="portfolio-overlay">
+                        <h3>تصميم بانر</h3>
+                        <p>بانر إعلاني متميز</p>
+                        <div class="view-details">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openPortfolioModal('assets/images/228_BC68C22.png', 'تصميم إعلان', 'إعلان رقمي جذاب', 'PNG', '1080x1080', '2024')">
+                    <img src="assets/images/228_BC68C22.png" alt="عمل 5">
+                    <div class="portfolio-overlay">
+                        <h3>تصميم إعلان</h3>
+                        <p>إعلان رقمي جذاب</p>
+                        <div class="view-details">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openPortfolioModal('assets/images/195_4ED545C.png', 'تصميم بوستر', 'بوستر إعلاني احترافي', 'PNG', '1080x1080', '2024')">
+                    <img src="assets/images/195_4ED545C.png" alt="عمل 6">
+                    <div class="portfolio-overlay">
+                        <h3>تصميم بوستر</h3>
+                        <p>بوستر إعلاني احترافي</p>
+                        <div class="view-details">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openPortfolioModal('assets/images/242_CE3EB28.png', 'شعار ثلاثي الأبعاد', 'شعار ثلاثي الأبعاد بتأثيرات خضراء', 'PNG', '1080x1080', '2024')">
+                    <img src="assets/images/242_CE3EB28.png" alt="عمل 7">
+                    <div class="portfolio-overlay">
+                        <h3>شعار ثلاثي الأبعاد</h3>
+                        <p>شعار ثلاثي الأبعاد بتأثيرات خضراء</p>
+                        <div class="view-details">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openPortfolioModal('assets/images/226_Copy_2_B510CE5.png', 'شعار حرف A', 'شعار حرف A بتدرج أحمر', 'PNG', '1080x1080', '2024')">
+                    <img src="assets/images/226_Copy_2_B510CE5.png" alt="عمل 8">
+                    <div class="portfolio-overlay">
+                        <h3>شعار حرف A</h3>
+                        <p>شعار حرف A بتدرج أحمر</p>
+                        <div class="view-details">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openPortfolioModal('assets/images/229_Copy_6B02358.png', 'شعار التاج', 'شعار التاج بتأثيرات بنفسجية', 'PNG', '1080x1080', '2024')">
+                    <img src="assets/images/229_Copy_6B02358.png" alt="عمل 9">
+                    <div class="portfolio-overlay">
+                        <h3>شعار التاج</h3>
+                        <p>شعار التاج بتأثيرات بنفسجية</p>
+                        <div class="view-details">
+                            <i class="fas fa-eye"></i>
+                            <span>عرض التفاصيل</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Section -->
+    <section id="store" class="store">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">المتجر</h2>
+                <p class="section-subtitle">تصاميم وقوالب جاهزة للشراء</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/الحزمة.png" alt="حزمة التصاميم">
+                        <div class="product-badge">جديد</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">حزمة التصاميم الشاملة</h3>
+                        <p class="product-description">مجموعة شاملة من التصاميم والقوالب الجاهزة للاستخدام</p>
+                        <div class="product-price">
+                            <span class="price">5 ريال</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="حزمة التصاميم الشاملة" data-price="5">
+                            <i class="fas fa-shopping-cart"></i> إضافة للسلة
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">آراء العملاء</h2>
+                <p class="section-subtitle">ما يقوله عملاؤنا عن خدماتنا</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <span>4</span>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>4fi1</h4>
+                                <p>مبدعين و سريعين مغاشاة و الخدمة و عدم الكذب</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-reactions">
+                        <span class="reaction-count">❤️ 3</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <span>9</span>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>90qt</h4>
+                                <p>مبدعين</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-reactions">
+                        <span class="reaction-count">❤️ 2</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <span>n</span>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>n.3tp</h4>
+                                <p>تقييم 10/10 متجر رائع و مضمون</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-reactions">
+                        <span class="reaction-count">❤️ 7</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <span>z</span>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>zo9c</h4>
+                                <p>الأفضل من دون منافس</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-reactions">
+                        <span class="reaction-count">❤️ 6</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <span>I</span>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>I 6 3 N</h4>
+                                <p>والله اطلق مصمم فيد @! Fayed والله عليه ضغط مو طبيعي لا تلومونه الرجل بيحول يخلص الكتب بسرع وقت</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-reactions">
+                        <span class="reaction-count">🔇 1</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <span>D</span>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>! D A A M 7 7 X</h4>
+                                <p>مبدع مبدع @! Fayed</p>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-reactions">
+                        <span class="reaction-count">💜 1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">من نحن</h2>
+                    <p>نحن فريق من المصممين المبدعين والمطورين المحترفين، نسعى لتقديم أفضل التصاميم الرقمية والحلول الإبداعية لعملائنا.</p>
+                    <p>نؤمن بأن التصميم الجيد يمكن أن يحدث فرقاً حقيقياً في نجاح أي مشروع، لذلك نحرص على تقديم تصاميم عالية الجودة تلبي احتياجات عملائنا وتفوق توقعاتهم.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>خبرة أكثر من 5 سنوات</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>أكثر من 1000 مشروع منجز</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>دعم فني على مدار الساعة</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/177_D73CB06.png" alt="فريق العمل">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/images/177_D73CB06.png" alt="شعار المتجر" class="footer-logo">
+                        <h3>Fydition Store</h3>
+                    </div>
+                    <p>نقدم أفضل التصاميم الرقمية والقوالب الجاهزة لمساعدتك في إنجاز مشاريعك بأعلى جودة.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#portfolio">معرض الأعمال</a></li>
+                        <li><a href="#store">المتجر</a></li>
+                        <li><a href="#reviews">التقييمات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="https://discord.gg/phBdT5s8y2" target="_blank" class="social-link">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 متجر التصاميم. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>سلة التسوق</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems"></div>
+                <div class="cart-total">
+                    <strong>المجموع: <span id="cartTotal">0</span> ريال</strong>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="checkoutBtn">إتمام الشراء</button>
+                <button class="btn btn-secondary" id="clearCartBtn">إفراغ السلة</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon" id="cartIcon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+
+    <!-- Portfolio Modal -->
+    <div id="portfolioModal" class="portfolio-modal">
+        <div class="portfolio-modal-content">
+            <span class="portfolio-modal-close" onclick="closePortfolioModal()">&times;</span>
+            <div class="portfolio-modal-body">
+                <div class="portfolio-modal-image">
+                    <img id="portfolioModalImage" src="" alt="">
+                </div>
+                <div class="portfolio-modal-details">
+                    <h2 id="portfolioModalTitle"></h2>
+                    <p id="portfolioModalDescription"></p>
+                    <div class="portfolio-modal-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-file-image"></i>
+                            <span>الصيغة: <span id="portfolioModalFormat"></span></span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                            <span>الأبعاد: <span id="portfolioModalDimensions"></span></span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>سنة الإنتاج: <span id="portfolioModalYear"></span></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-modal-actions">
+                        <button class="btn btn-primary" onclick="closePortfolioModal()">
+                            <i class="fas fa-times"></i>
+                            إغلاق
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
